@@ -1,34 +1,33 @@
-# Academicons Extension for Quarto
+# Scholaricons Extension for Quarto
 
-This extension provides support for
-[academicons](https://jpswalsh.github.io/academicons/) (v1.9.4). Icons can be used in
-HTML  and PDF documents only.
+This extension provides support for [Scholaricons](https://treysaddler.github.io/scholaricons/) (v1.0.0). Icons can be used in HTML and PDF documents only.
 
 The code is adapted from the [fontawesome](https://github.com/quarto-ext/fontawesome) extension.
 
 ## Installing
 
 ```bash
-quarto install extension schochastics/academicons
+quarto install extension treysaddler/scholaricons
 ```
 
 This will install the extension under the `_extensions` subdirectory.
+
 If you're using version control, you will want to check in this directory.
 
 ## Using
 
-To embed an icon, use the `{{{< ai >}}}` shortcode. For example:
+To embed an icon, use the `{{{< sci >}}}` shortcode. For example:
 
 ```default
-{{< ai arxiv >}} 
-{{< ai google-scholar >}}
-{{< ai open-access >}}
-{{< ai open-access size=5x >}}
+{{< sci arxiv >}} 
+{{< sci google-scholar >}}
+{{< sci open-access >}}
+{{< sci open-access size=5x >}}
 ```
 
 You can browse all of the available icons here:
 
-<https://jpswalsh.github.io/academicons/>
+<https://treysaddler.github.io/scholaricons/>
 
 ### Sizing Icons
 
@@ -38,7 +37,7 @@ converted to HTML-style sizing for HTML documents, and _relative_ HTML-styles si
 converted to LaTeX-style sizing for PDF documents. Different sizes can be specified
 for HTML and PDF documents using the `hsize` and `psize` parameters.
 
-- Relative sizing: `{{< ai open-access size=2xl >}}`.
+- Relative sizing: `{{< sci open-access size=2xl >}}`.
 
   | Relative Sizing Class | Font Size | Equivalent in Pixels |
   | --------------------- | --------- | -------------------- |
@@ -49,7 +48,7 @@ for HTML and PDF documents using the `hsize` and `psize` parameters.
   | ai-xl                 | 1.5em     | 24px                 |
   | ai-2xl                | 2em       | 32px                 |
 
-- Literal sizing: `{{< ai open-access size=5x >}}`.
+- Literal sizing: `{{< sci open-access size=5x >}}`.
 
   | Literal Sizing Class | Font Size |
   | -------------------- | --------- |
@@ -64,7 +63,7 @@ for HTML and PDF documents using the `hsize` and `psize` parameters.
   | ai-9x                | 9em       |
   | ai-10x               | 10em      |
 
-- LaTeX-style sizing: `{{< ai open-access size=Huge >}}`.
+- LaTeX-style sizing: `{{< sci open-access size=Huge >}}`.
 
   | Sizing Command                   | Font Size (HTML) |
   | -------------------------------- | ---------------- |
@@ -79,19 +78,19 @@ for HTML and PDF documents using the `hsize` and `psize` parameters.
   | huge (= `\huge`)                 | 2em              |
   | Huge (= `\Huge`)                 | 2.5em            |
 
-- Different sizes for HTML and PDF: `{{< ai open-access hsize=xl psize=Large >}}`.
+- Different sizes for HTML and PDF: `{{< sci open-access hsize=xl psize=Large >}}`.
 
 ### Coloring icon
 
 The color of the icon can be changed via the `color` parameter.  
-`{{< ai open-access color=red >}}` 
+`{{< sci open-access color=red >}}` 
 
 
 Different colors for HTML and PDF can be specified using the `hcolor` and `pcolor` parameters:
-`{{< ai open-access hcolor=red pcolor=blue >}}`
+`{{< sci open-access hcolor=red pcolor=blue >}}`
 
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd)
 
-This is the output of `example.qmd` for [HTML](https://schochastics.quarto.pub/academicons-quarto-extension/).
+TODO: This is the output of `example.qmd` for [HTML](https://treysaddler.quarto.pub/scholaricons-quarto-extension/).

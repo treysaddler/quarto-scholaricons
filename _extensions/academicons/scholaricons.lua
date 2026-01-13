@@ -1,12 +1,12 @@
 function ensureLatexDeps()
-  quarto.doc.use_latex_package("academicons")
+  quarto.doc.use_latex_package("scholaricons")
 end
 
 local function ensureHtmlDeps()
   quarto.doc.add_html_dependency({
-    name = "academicons",
-    version = "1.9.4",
-    stylesheets = { "assets/css/all.css", "assets/css/size.css" }
+    name = "scholaricons",
+    version = "1.0.0",
+    stylesheets = { "assets/css/scholaricons.css", "assets/css/size.css" }
   })
 end
 
@@ -66,7 +66,7 @@ local function convertToHtmlSize(size)
 end
 
 return {
-  ["ai"] = function(args, kwargs)
+  ["sci"] = function(args, kwargs)
     local group = ""
     local icon = pandoc.utils.stringify(args[1])
     if #args > 1 then
@@ -103,7 +103,7 @@ return {
       end
       size = convertToHtmlSize(size)
       if not isEmpty(size) then
-        size = " ai-" .. size
+        size = " sci-" .. size
       end
       if not isEmpty(hcolor) then
         color = hcolor
@@ -113,7 +113,7 @@ return {
       end
       return pandoc.RawInline(
         'html',
-        "<i class=\"ai " .. group .. " ai-" .. icon .. size .. "\"" .. title .. color .. label .. "></i>"
+        "<i class=\"sci " .. group .. " sci-" .. icon .. size .. "\"" .. title .. color .. label .. "></i>"
       )
       -- detect pdf / beamer / latex / etc
     elseif quarto.doc.is_format("pdf") then
@@ -134,9 +134,9 @@ return {
       icon = icon:gsub("-square", "_SQUARE"):gsub("-", ""):gsub("_SQUARE", "-square")
 
       if isEmpty(size) and isEmpty(color) then
-        return pandoc.RawInline('tex', "\\aiicon{" .. icon .. "}")
+        return pandoc.RawInline('tex', "\\sciicon{" .. icon .. "}")
       else
-        return pandoc.RawInline('tex', "{" .. size .. color .. "\\aiicon{" .. icon .. "}}")
+        return pandoc.RawInline('tex', "{" .. size .. color .. "\\sciicon{" .. icon .. "}}")
       end
     else
       return pandoc.Null()
