@@ -1,114 +1,114 @@
-.ai-tiny {
+.sci-tiny {
   font-size: 0.5em;
 }
 
-.ai-scriptsize {
+.sci-scriptsize {
   font-size: 0.7em;
 }
 
-.ai-footnotesize {
+.sci-footnotesize {
   font-size: 0.8em;
 }
 
-.ai-small {
+.sci-small {
   font-size: 0.9em;
 }
 
-.ai-normalsize {
+.sci-normalsize {
   font-size: 1em;
 }
 
-.ai-large {
+.sci-large {
   font-size: 1.2em;
 }
 
-.ai-Large {
+.sci-Large {
   font-size: 1.5em;
 }
 
-.ai-LARGE {
+.sci-LARGE {
   font-size: 1.75em;
 }
 
-.ai-huge {
+.sci-huge {
   font-size: 2em;
 }
 
-.ai-Huge {
+.sci-Huge {
   font-size: 2.5em;
 }
 
-.ai-1x {
+.sci-1x {
   font-size: 1em;
 }
 
-.ai-2x {
+.sci-2x {
   font-size: 2em;
 }
 
-.ai-3x {
+.sci-3x {
   font-size: 3em;
 }
 
-.ai-4x {
+.sci-4x {
   font-size: 4em;
 }
 
-.ai-5x {
+.sci-5x {
   font-size: 5em;
 }
 
-.ai-6x {
+.sci-6x {
   font-size: 6em;
 }
 
-.ai-7x {
+.sci-7x {
   font-size: 7em;
 }
 
-.ai-8x {
+.sci-8x {
   font-size: 8em;
 }
 
-.ai-9x {
+.sci-9x {
   font-size: 9em;
 }
 
-.ai-10x {
+.sci-10x {
   font-size: 10em;
 }
 
-.ai-2xs {
+.sci-2xs {
   font-size: 0.625em;
   line-height: 0.1em;
   vertical-align: 0.225em;
 }
 
-.ai-xs {
+.sci-xs {
   font-size: 0.75em;
   line-height: 0.08333em;
   vertical-align: 0.125em;
 }
 
-.ai-sm {
+.sci-sm {
   font-size: 0.875em;
   line-height: 0.07143em;
   vertical-align: 0.05357em;
 }
 
-.ai-lg {
+.sci-lg {
   font-size: 1.25em;
   line-height: 0.05em;
   vertical-align: -0.075em;
 }
 
-.ai-xl {
+.sci-xl {
   font-size: 1.5em;
   line-height: 0.04167em;
   vertical-align: -0.125em;
 }
 
-.ai-2xl {
+.sci-2xl {
   font-size: 2em;
   line-height: 0.03125em;
   vertical-align: -0.1875em;
