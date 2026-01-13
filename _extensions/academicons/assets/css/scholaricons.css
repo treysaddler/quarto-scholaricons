@@ -7,7 +7,6 @@
   src: url("../fonts/scholaricons.eot");
   src: url("../fonts/scholaricons.eot?#iefix") format("embedded-opentype"),
        url("../fonts/scholaricons.woff2") format("woff2"),
-       url("../fonts/scholaricons.woff") format("woff"),
        url("../fonts/scholaricons.ttf") format("truetype"),
        url("../fonts/scholaricons.svg#scholaricons") format("svg");
   font-weight: normal;
